@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\1a3f2ca7-a201-45d4-aaa0-4ea900f35e03.png",
+      "PackagePath": "staticwebassets\\uploads\\1a3f2ca7-a201-45d4-aaa0-4ea900f35e03.png"
+    },
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\2164f2c0-1457-4509-ae86-5328622e52ca.wav",
+      "PackagePath": "staticwebassets\\uploads\\2164f2c0-1457-4509-ae86-5328622e52ca.wav"
+    },
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\4333cb30-50ad-43d9-aeef-52b9ce4f9b70.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4333cb30-50ad-43d9-aeef-52b9ce4f9b70.jpg"
+    },
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\4e0ffcbc-12e4-4ce7-a725-2b5005711e87.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4e0ffcbc-12e4-4ce7-a725-2b5005711e87.jpg"
+    },
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\b0351151-2aed-4e42-9bd8-55f137928e2c.wav",
+      "PackagePath": "staticwebassets\\uploads\\b0351151-2aed-4e42-9bd8-55f137928e2c.wav"
+    },
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\cde5f05d-8fab-4424-83ef-e1ecab6d261d.png",
+      "PackagePath": "staticwebassets\\uploads\\cde5f05d-8fab-4424-83ef-e1ecab6d261d.png"
+    },
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\ce436eb9-bdd8-4df9-9ac7-d78eaf518478.png",
+      "PackagePath": "staticwebassets\\uploads\\ce436eb9-bdd8-4df9-9ac7-d78eaf518478.png"
+    },
+    {
+      "Id": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\wwwroot\\uploads\\e163b985-a46b-4b7e-84c1-55799de0af39.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e163b985-a46b-4b7e-84c1-55799de0af39.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OTPLoginAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OTPLoginAPI.props",
+      "PackagePath": "build\\OTPLoginAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OTPLoginAPI.props",
+      "PackagePath": "buildMultiTargeting\\OTPLoginAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OTPLoginAPI.props",
+      "PackagePath": "buildTransitive\\OTPLoginAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

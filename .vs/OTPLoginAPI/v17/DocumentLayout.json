@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{485EE8F5-6C9D-4F91-957B-CD7812F593E3}|OTPLoginAPI.csproj|d:\\akash\\project\\fl-musicplayer\\otploginapi\\controllers\\musiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{485EE8F5-6C9D-4F91-957B-CD7812F593E3}|OTPLoginAPI.csproj|solutionrelative:controllers\\musiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MusicController.cs",
+              "DocumentMoniker": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\Controllers\\MusicController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MusicController.cs",
+              "ToolTip": "D:\\Akash\\Project\\FL-MusicPlayer\\OTPLoginAPI\\Controllers\\MusicController.cs",
+              "RelativeToolTip": "Controllers\\MusicController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T04:32:03.926Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
