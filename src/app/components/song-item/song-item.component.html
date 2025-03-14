@@ -1,0 +1,71 @@
+<div
+  [ngClass]="{
+    'col-xl-6 col-md-12 col-sm-12 col-xs-12': true,
+    'offset-xl-6 offset-md-12': position % 2 === 0
+  }"
+>
+  <div
+    [ngClass]="{
+      prt_about_learnbox_right: position % 2 === 0,
+      prt_about_learnbox_left: position % 2 !== 0
+    }"
+  >
+    <div class="prt_about_learnbox_year">
+      <img [src]="this.getFilePath(song.thumbnail)" [alt]="song.title" />
+      <!-- <img
+        [src]="
+          'https://specials-images.forbesimg.com/imageserve/65c2b35c614635f76b0a382e/Led-Zeppelin-in-Concert-at-Chicago-Stadium---1-20-1975/960x0.jpg?fit=scale'
+        "
+        [alt]="song.title"
+      /> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="54"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#fff"
+          fill-opacity="0"
+          stroke="#fff"
+          stroke-dasharray="40"
+          stroke-dashoffset="40"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 6l10 6l-10 6Z"
+        >
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="0.5s"
+            dur="0.5s"
+            values="0;1"
+          />
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            dur="0.5s"
+            values="40;0"
+          />
+        </path>
+      </svg>
+    </div>
+    <div
+      class="prt_about_learnbox_info"
+      [ngStyle]="{
+        width: position % 2 === 0 ? '100%' : 'calc(100% - 200px)',
+        'margin-left': position % 2 === 0 ? '20px' : '30px'
+      }"
+    >
+      <h4>{{ song.title }}</h4>
+      <span><strong>Artist:</strong> {{ song.artistsName }}</span>
+      <p><strong>Album:</strong> {{ song.albumName }}</p>
+      <p>
+        <strong>Release Date:</strong>
+        {{ song.createdAt | date }}
+      </p>
+      <p><strong>Genre:</strong> {{ song.genre ? song.genre : "NA" }}</p>
+    </div>
+  </div>
+</div>

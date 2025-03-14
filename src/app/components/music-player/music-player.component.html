@@ -1,0 +1,105 @@
+<div class="music-player-container">
+  <div class="music-player-left">
+    <div class="music-info">
+      <img
+        [src]="this.getFilePath(song?.thumbnail)"
+        [alt]="song?.title"
+        class="album-art"
+      />
+      <div>
+        <p class="song-title">{{ song?.title }}</p>
+        <p class="artist-name">{{ song?.artistsName }}</p>
+      </div>
+    </div>
+    <div class="music-controls">
+      <button class="control-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          >
+            <path d="M6 7v10" />
+            <path
+              fill="#fff"
+              d="M17.028 5.267a.6.6 0 0 1 .972.471v12.524a.6.6 0 0 1-.972.47l-7.931-6.261a.6.6 0 0 1 0-.942z"
+            />
+          </g>
+        </svg>
+      </button>
+
+      <button class="control-btn play-btn" (click)="togglePlay()">
+        <ng-container *ngIf="!isPlaying">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path fill="#fff" d="M8 6l10 6l-10 6Z" />
+          </svg>
+        </ng-container>
+        <ng-container *ngIf="isPlaying">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#fff"
+              d="M16 19q-.825 0-1.412-.587T14 17V7q0-.825.588-1.412T16 5t1.413.588T18 7v10q0 .825-.587 1.413T16 19m-8 0q-.825 0-1.412-.587T6 17V7q0-.825.588-1.412T8 5t1.413.588T10 7v10q0 .825-.587 1.413T8 19"
+            />
+          </svg>
+        </ng-container>
+      </button>
+
+      <button class="control-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#fff"
+            d="M20.095 21a.75.75 0 0 1-.75-.75V3.75a.75.75 0 0 1 1.5 0v16.5a.74.74 0 0 1-.75.75m-3.4-9.589a2.25 2.25 0 0 1-.85 1.82l-9.11 7.09c-.326.247-.713.4-1.12.44h-.23a2.14 2.14 0 0 1-1-.22a2.2 2.2 0 0 1-.9-.81a2.17 2.17 0 0 1-.33-1.16V5.421a2.2 2.2 0 0 1 .31-1.12a2.25 2.25 0 0 1 .85-.8a2.18 2.18 0 0 1 2.24.1l9.12 6.08c.29.191.53.448.7.75a2.3 2.3 0 0 1 .32.98"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="music-player-right">
+    <div class="waveform-container" #waveformContainer></div>
+    <div class="volume-controls">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#fff"
+          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-2.39-1.73-4.36-4-4.89V5.1c3.15.51 5.5 3.25 5.5 6.9c0 3.65-2.35 6.39-5.5 6.9v-2.01c2.27-.53 4-2.5 4-4.89"
+        />
+      </svg>
+      <input
+        type="range"
+        class="volume-slider"
+        min="0"
+        max="1"
+        step="0.01"
+        [value]="volume"
+        (input)="setVolume($event)"
+      />
+    </div>
+  </div>
+</div>

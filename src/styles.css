@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #221f1f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 1;
+    will-change: transform, opacity;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: background-color 0.5s ease;
+}

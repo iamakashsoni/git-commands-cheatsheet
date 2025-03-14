@@ -1,0 +1,50 @@
+<div class="video-item">
+  <div class="video-tile">
+    <img
+      [src]="this.getFilePath(video.thumbnail)"
+      [alt]="video.title"
+      class="video-thumbnail"
+    />
+    <!-- <img
+      src="https://specials-images.forbesimg.com/imageserve/65c2b35c614635f76b0a382e/Led-Zeppelin-in-Concert-at-Chicago-Stadium---1-20-1975/960x0.jpg?fit=scale"
+      alt="Video Thumbnail"
+      class="video-thumbnail"
+    /> -->
+    <div class="play-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="54"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#fff"
+          fill-opacity="0"
+          stroke="#fff"
+          stroke-dasharray="40"
+          stroke-dashoffset="40"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 6l10 6l-10 6Z"
+        >
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="0.5s"
+            dur="0.5s"
+            values="0;1"
+          />
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            dur="0.5s"
+            values="40;0"
+          />
+        </path>
+      </svg>
+    </div>
+  </div>
+  <h5 class="mt-2">{{ video.title }}</h5>
+  <p>{{ video.artistsName }}</p>
+</div>

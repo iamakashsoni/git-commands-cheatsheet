@@ -1,0 +1,37 @@
+<div class="prt_services_wrapper">
+  <div class="prt_close_wrapper">
+    <a routerLink="/">
+      <img src="images/header/up_arrow.png" alt="Close" class="prt_close" />
+    </a>
+  </div>
+  <div class="prt_services_slider_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="prt_heading_wrapper">
+            <div class="prt_heading">
+              <h1>&nbsp; Video's &nbsp;</h1>
+              <p>Watch & enjoy</p>
+            </div>
+          </div>
+        </div>
+
+        <app-video-player [video]="showVideoOnTop"></app-video-player>
+      </div>
+    </div>
+  </div>
+
+  <div class="prt_skills_wrapper">
+    <div class="container">
+      <div id="canvas">
+        <div class="video-list">
+          <app-video-item
+            *ngFor="let item of Videos"
+            [video]="item"
+            (click)="playSelectedVideo(item)"
+          ></app-video-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

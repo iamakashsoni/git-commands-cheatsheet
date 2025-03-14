@@ -1,0 +1,20 @@
+<div class="row prt_main_video" style="display: flex; align-items: center">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <video
+      #videoPlayer
+      controls
+      height="400px"
+      [attr.src]="this.getFilePath(video.link)"
+    >
+      Your browser does not support HTML5 video.
+    </video>
+    <h4>{{ video.title }}</h4>
+    <p>
+      <span style="color: #f6483b">{{ video.artistsName }} </span> |
+      <span
+        >{{ video.createdAt | date }} |
+        {{ video.genre ? video.genre : "NA" }}</span
+      >
+    </p>
+  </div>
+</div>

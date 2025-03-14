@@ -1,0 +1,98 @@
+<div class="prt_portfolio_wrapper">
+  <div class="prt_close_wrapper">
+    <a routerLink="/">
+      <img src="images/header/down_arrow.png" alt="Close" class="prt_close" />
+    </a>
+  </div>
+  <div class="container">
+    <div class="prt_about_info">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="prt_about_img">
+            <img
+              src="images/content/artist.jpeg"
+              alt="About"
+              style="cursor: pointer"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="prt_heading_wrapper_2">
+            <div class="prt_heading">
+              <h1>About &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+              <p>Yonder Melodies!</p>
+            </div>
+          </div>
+          <div class="prt_about_details">
+            <p>
+              Yonder Melodies! is a dedicated showcase for musicians, bringing
+              their artistry to life through immersive soundscapes and visuals.
+              Whether you're a rising star or an established performer, this
+              platform amplifies your melodies beyond boundaries.
+              <br />
+              <br />
+              Experience the essence of each artist through high-quality
+              streaming. From soulful ballads to electrifying beats, dive into
+              curated tracks that define their journey. Discover the creative
+              vision behind the music with exclusive videos. Live performances,
+              behind-the-scenes clips, and cinematic storytelling bring an
+              artist's expression to life.
+            </p>
+            <a href="/" class="prt_btn" target="_blank">Follow</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prt_about_edulearn_wrapper">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="prt_heading_wrapper">
+          <div class="prt_heading">
+            <h1>Audio Songs</h1>
+            <p>Listen to the melodies</p>
+          </div>
+        </div>
+        <div class="prt_about_learnsection">
+          <div class="row">
+            <app-song-item
+              *ngFor="let item of Audios; let i = index"
+              [song]="item"
+              [position]="i"
+              (click)="selectSong(item)"
+            ></app-song-item>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prt_about_experience_wrapper">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="prt_heading_wrapper">
+          <div class="prt_heading">
+            <h1>Videos</h1>
+          </div>
+        </div>
+        <app-video-player
+          *ngIf="showVideoOnTop != null"
+          [video]="showVideoOnTop"
+        ></app-video-player>
+        <div class="prt_about_experience">
+          <div class="row">
+            <div
+              class="col-lg-6 col-md-12 col-sm-12 col-xs-12"
+              *ngFor="let item of Videos"
+            >
+              <app-video-item-at-about
+                [video]="item"
+                (click)="playSelectedVideo(item)"
+              ></app-video-item-at-about>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-music-player
+  *ngIf="selectedSong != null"
+  [song]="selectedSong"
+></app-music-player>
